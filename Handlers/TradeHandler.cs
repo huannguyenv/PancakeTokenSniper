@@ -18,7 +18,7 @@ namespace BscTokenSniper.Handlers
 {
     public class TradeHandler : IDisposable
     {
-        
+
         private readonly SniperConfiguration _sniperConfig;
         private readonly Web3 _bscWeb3;
         private readonly Contract _pancakeContract;
@@ -157,7 +157,7 @@ namespace BscTokenSniper.Handlers
             }
             catch (Exception e)
             {
-                Log.Logger.Error("Error selling", e);
+                Log.Logger.Error("Error selling with exception", e);
                 return false;
             }
         }
